@@ -11,7 +11,7 @@ Brickview Real Estate is an interactive real estate analytics dashboard built us
 - Property type distribution
 - Monthly sales and listings trends
 - CRUD operations
-- 30 SQL analytical queries
+- Analytical queries
 - Buyer and agent analysis
 - Sales performance analysis
 
@@ -69,7 +69,7 @@ operations on real estate records.
 
 ### 5. SQL Queries
 
-The project contains 30 SQL analytical queries covering:
+The project contains analytical queries covering:
 
 - Property pricing
 - Property characteristics
