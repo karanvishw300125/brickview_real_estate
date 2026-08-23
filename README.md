@@ -1,6 +1,6 @@
-# 🏠 Brickview Real Estate
+# 🏠 Brickview Real Estate Analytics Platform
 
-Brickview Real Estate is an interactive real estate analytics dashboard built using Python, SQL, SQLite and Streamlit.
+Brickview Real Estate Analytics Platform is an interactive real estate analytics dashboard built using Python, SQL, SQLite, and Streamlit.
 
 ## 🚀 Features
 
