@@ -142,10 +142,12 @@ elif page == "Filters & Explorer":
 
 
     max_price = run_query("""
-        SELECT MAX(Price) AS max_price
+        SELECT MAX(CAST(Price AS REAL)) AS max_price
         FROM listings
+        WHERE Price IS NOT NULL
     """).iloc[0]["max_price"]
 
+    max_price = float(max_price) if max_price is not None else 1000000
     max_price = int(max_price)
 
 
@@ -336,6 +338,10 @@ elif page == "Visualization":
         """)
 
         if not map_data.empty:
+
+            map_data["Latitude"] = pd.to_numeric(map_data["Latitude"], errors="coerce")
+            map_data["Longitude"] = pd.to_numeric(map_data["Longitude"], errors="coerce")
+            map_data = map_data.dropna(subset=["Latitude", "Longitude"])
 
             fig = px.scatter_map(
                 map_data,
