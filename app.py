@@ -361,7 +361,7 @@ elif page == "Visualization":
             )
 
             fig.update_layout(
-                mapbox_style="open-street-map",
+                map_style="open-street-map",
                 margin=dict(
                     l=0,
                     r=0,
